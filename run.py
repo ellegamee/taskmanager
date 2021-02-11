@@ -7,16 +7,14 @@ print("")
 
 # Freq print
 cpu_freq = list(psutil.cpu_freq())
-for count, i in enumerate(cpu_freq):
-    i = i / 1000
-    i = str(i)
-    i = i[:3]
+for count, item in enumerate(cpu_freq):
+    item = str(item / 1000)[:3]
     if count == 0:
-        print("Max Frequency: {}Ghz".format(i))
+        print("Max Frequency: {}Ghz".format(item))
     if count == 1:
-        print("Min Frequency: {}Ghz".format(i))
+        print("Min Frequency: {}Ghz".format(item))
     if count == 2:
-        print("Current Frequency: {}Ghz".format(i))
+        print("Current Frequency: {}Ghz".format(item))
 
 # Percent print
 print("")
