@@ -1,0 +1,5 @@
+###### Requirements without Version Specifiers ######`
+psutil
+
+###### Requirements with Version Specifiers ######`
+psutil==5.8.0
