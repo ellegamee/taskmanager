@@ -18,3 +18,11 @@ for count, item in enumerate(cpu_freq):
 
 # Percent print
 print("")
+
+while True:
+    cpu_percent = list(psutil.cpu_percent(interval=1, percpu=True))
+
+    for count, x in enumerate(cpu_percent):
+        print("CPU {}:   {}%".format(count, x))
+
+    print("")
