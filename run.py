@@ -23,6 +23,7 @@ while True:
     cpu_percent = list(psutil.cpu_percent(interval=1, percpu=True))
 
     for count, x in enumerate(cpu_percent):
-        print("CPU {}:   {}%".format(count, x))
+        # ! Problem with updating percent correct
+        print("CPU {}:   {}%".format(count, x), end="\r")
 
     print("")
